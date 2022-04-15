@@ -1,0 +1,22 @@
+{
+  "name": "completed-nft-project",
+  "version": "1.0.0",
+  "description": "nft project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zai zainal",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "chai": "^4.3.6",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.9.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0"
+  }
+}
