@@ -4,7 +4,7 @@
       <h4 class="font-weight-bold mb-5">
         Owner Collection
         <v-chip class="ma-2 white--text" color="green" small>
-          Total Created: {{ totalTokenCreated }}
+          Total Created: {{ ownerCollections.length }}
         </v-chip>
 
         <v-btn color="primary" to="/nft/upload" small outlined class="ml-3"

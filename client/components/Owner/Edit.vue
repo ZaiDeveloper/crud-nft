@@ -29,7 +29,9 @@
             ></v-text-field>
 
             <v-btn type="submit" color="primary" block> Update NFT </v-btn>
-            <div class="text-caption my-3">*This tool for owner only.</div>
+            <v-btn color="gray" to="/" class="mt-3" block plain
+              >Back to Home</v-btn
+            >
           </form>
         </div>
       </v-col>
@@ -76,7 +78,7 @@ export default {
     this.address = this.walletAddress;
 
     const contract = this.$helper.getContract();
-    const collection = await new contract.collections(this.currentToken);
+    const collection = await new contract.getCollections(this.currentToken);
     if (collection) {
       this.name = collection.name;
       this.price = ethers.utils.formatUnits(

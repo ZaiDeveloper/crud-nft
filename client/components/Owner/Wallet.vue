@@ -64,21 +64,8 @@ export default {
       if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
         onboarding.startOnboarding();
       } else {
-        // await window.ethereum.request({
-        //   method: "eth_requestAccounts",
-        // });
         await this.$store.dispatch("user/wallet/connectWallet");
       }
-
-      // if (typeof window.ethereum !== "undefined") {
-      //   await this.$store.dispatch("user/wallet/connectWallet");
-      // } else {
-      //   // Non-decentralized app browsers...
-      //   console.log(
-      //     "Non-Ethereum browser detected. You should consider trying MetaMask!"
-      //   );
-      //   window.location = "https://metamask.io/download/";
-      // }
     },
     async disconnectWallet() {
       await this.$store.commit("user/wallet/SET_CONNECTED_DATA", false);

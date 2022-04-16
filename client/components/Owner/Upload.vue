@@ -34,7 +34,9 @@
             ></v-text-field>
 
             <v-btn type="submit" color="primary" block> Upload NFT </v-btn>
-            <div class="text-caption my-3">*This tool for owner only.</div>
+            <v-btn color="gray" to="/" class="mt-3" block plain
+              >Back to Home</v-btn
+            >
           </form>
         </div>
       </v-col>
